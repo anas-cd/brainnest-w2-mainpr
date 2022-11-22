@@ -1,5 +1,9 @@
 @import './styling/homePage/header.css';
 @import './styling/homePage/hero.css';
+@import './styling/homePage/randInfo.css';
+@import './styling/homePage/quote.css';
+@import './styling/homePage/cta.css';
+@import './styling/homePage/footer.css';
 
 html {
     box-sizing: border-box;

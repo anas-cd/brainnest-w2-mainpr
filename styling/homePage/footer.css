@@ -1,0 +1,12 @@
+@import "../colors.css";
+
+footer {
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+footer .wc {
+    justify-content: center;
+}

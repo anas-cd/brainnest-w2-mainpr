@@ -1,4 +1,4 @@
-@import "/styling/colors.css";
+@import "../colors.css";
 
 header {
     justify-content: center;
