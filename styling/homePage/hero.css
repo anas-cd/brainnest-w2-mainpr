@@ -1,0 +1,27 @@
+@import "/styling/colors.css";
+
+main .hero {
+    padding-top: 6rem;
+    justify-content: center;
+    background-color: var(--hero-bg);
+    color: var(--hero-txt);
+}
+
+main .hero .heroInfo {
+    margin-right: 2rem;
+}
+
+main .hero h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--hero-main-txt);
+}
+
+main .hero p {
+    margin-bottom: .5rem;
+    font-size: 1.125rem;
+}
+
+
+
+

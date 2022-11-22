@@ -1,0 +1,23 @@
+@import "/styling/colors.css";
+
+header {
+    justify-content: center;
+    background-color: var(--hero-bg);
+}
+header > div.wc {
+    justify-content: space-between;
+    align-items: baseline;
+}
+header h1{
+    color: var(--hero-main-txt);
+    font-size: 1.5rem;
+}
+header nav li {
+    margin: 0 .75rem;
+    list-style: none;
+}
+header nav li a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: var(--hero-txt);
+}

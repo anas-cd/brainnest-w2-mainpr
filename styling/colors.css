@@ -1,0 +1,19 @@
+:root {
+    /* main theme colors*/
+    --theme-accent: #3882f6;
+    --dark: #1f2937;
+    --light: #f9faf8;
+    --med:#e5e7eb;
+    /* header & hero and footer sections*/
+    --hero-bg: var(--dark);
+    --hero-txt: var(--med);
+    --hero-main-txt: var(--light);
+    /* info section */
+    --info-bg: var(--light);
+    --info-txt: var(--dark);
+    /* quote section */
+    --quote-bg: var(--med);
+    --quote-txt: var(--dark);
+    /* CTA section */
+    
+}
