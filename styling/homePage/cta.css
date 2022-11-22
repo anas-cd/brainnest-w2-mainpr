@@ -1,0 +1,19 @@
+@import "../colors.css";
+
+main .cta {
+    justify-content: center;
+    padding: 5.5rem 0;
+}
+main .cta .ctaBanner {
+    justify-content: space-around;
+    padding: 3rem 0rem;
+    border-radius: 10px;
+    background-color: var(--cta-bg);
+    color: var(--cta-txt);
+}
+main .cta .ctaBanner h3 {
+    letter-spacing: 1px;
+}
+main .cta .ctaBanner > button {
+    border: 2px solid var(--light);
+}

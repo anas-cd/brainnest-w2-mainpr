@@ -1,7 +1,7 @@
-@import "/styling/colors.css";
+@import "../colors.css";
 
 main .hero {
-    padding-top: 6rem;
+    padding: 6rem 0;
     justify-content: center;
     background-color: var(--hero-bg);
     color: var(--hero-txt);
@@ -20,6 +20,10 @@ main .hero h1 {
 main .hero p {
     margin-bottom: .5rem;
     font-size: 1.125rem;
+}
+
+main .hero img {
+    width: 470px;
 }
 
 

@@ -9,11 +9,12 @@
     --hero-txt: var(--med);
     --hero-main-txt: var(--light);
     /* info section */
-    --info-bg: var(--light);
+    --info-bg: white;
     --info-txt: var(--dark);
     /* quote section */
     --quote-bg: var(--med);
     --quote-txt: var(--dark);
     /* CTA section */
-    
+    --cta-bg: var(--theme-accent);
+    --cta-txt: var(--light);
 }
