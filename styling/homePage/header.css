@@ -4,13 +4,21 @@ header {
     justify-content: center;
     background-color: var(--hero-bg);
 }
+header nav {
+    min-width: 7rem;
+}
 header > div.wc {
     justify-content: space-between;
     align-items: baseline;
 }
 header h1{
+    flex-shrink: 0;
     color: var(--hero-main-txt);
     font-size: 1.5rem;
+}
+header nav input#mobMenu, header nav label#mobMenu {
+    display: none;
+    margin-bottom: 1rem;
 }
 header nav li {
     margin: 0 .75rem;
@@ -20,4 +28,45 @@ header nav li a {
     text-decoration: none;
     font-size: 1.125rem;
     color: var(--hero-txt);
+}
+
+@media screen and (max-width:820px) {
+    header nav {
+        width: 100%;
+    } 
+    header nav label#mobMenu {
+        display: block;
+    } 
+    header nav label#mobMenu {
+        color: var(--hero-bg);
+        cursor: pointer;
+        background: url(../../assets/images/menu-closed.png) no-repeat right center;
+        background-size: 24px;
+        padding: 4px 0;
+    }
+    header nav menu.menuDrob {
+        flex-flow: column nowrap;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        background-color: var(--hero-bg);
+        box-shadow: 0px 24px 76px 0px var(--dark);
+    }
+    header nav li {
+        padding: 1rem 0;
+    }
+    /* menu activation */
+    header nav input#mobMenu:checked ~ menu.menuDrob {
+        max-height: fit-content;
+        border: 2px solid var(--med);
+        border-radius: 10px;
+    }
+    header nav input#mobMenu:checked ~ label#mobMenu {
+        background: url(../../assets/images/menu-opened.png) no-repeat right center;;
+        background-size: 24px;
+        padding: 4px 0 4px 30px;
+    }
 }

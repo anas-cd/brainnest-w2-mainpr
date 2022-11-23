@@ -11,7 +11,6 @@ html {
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
-
 *, *:before, *:after {
     box-sizing: inherit;  
     margin: 0; 
@@ -27,23 +26,25 @@ button {
     background-color: var(--theme-accent);
     color: var(--light);
 }
-
 button:hover {
     cursor: pointer;
 }
 
+@media screen and (max-width:820px) {
+    button {
+        padding: 1rem 2rem;
+    }
+}
 /* globale helper classes */
 .wc {
     max-width: 1000px;
     width: 100%;
     padding: 1rem;
 }
-
 .rowFlexer {
     display: flex;
     flex-flow: row nowrap;
 }
-
 .colFlexer {
     display: flex;
     flex-flow: column nowrap;
