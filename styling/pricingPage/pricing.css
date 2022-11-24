@@ -1,0 +1,59 @@
+@import '../colors.css';
+
+main section.pricing {
+    justify-content: center;
+    padding: 6rem 0rem;
+    background-color: var(--quote-bg);
+}
+main section.pricing div.wc {
+    align-items: center;
+}
+main section.pricing h1 {
+    font-size: 48px;
+    margin-bottom: 4rem;
+}
+main section.pricing ul.pricePackages {
+    flex-flow: row wrap;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+}
+main section.pricing ul.pricePackages li.priceCard {
+    flex-grow: 1;
+    align-items: center;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: var(--light);
+    transition-duration: 0.3s;
+}
+main section.pricing ul.pricePackages li.priceCard:nth-child(2) {
+    border-color: #AAD922;
+    transform: translateY(-10px);
+    box-shadow: 0px 24px 32px -24px #44570d;
+}
+main section.pricing ul.pricePackages li.priceCard:hover {
+    border-color: var(--theme-accent);
+    box-shadow: 0px 24px 32px -24px var(--theme-accent);
+    scale: 1.05;
+}
+main section.pricing ul.pricePackages li.priceCard > * {
+    margin: 0.5rem 0rem;
+}
+main section.pricing ul.pricePackages li.priceCard > hr {
+    width: 100%;
+    border-color: var(--med);
+}
+main section.pricing ul.pricePackages li.priceCard ul {
+    align-self: flex-start;
+    list-style-type: disc;
+}
+main section.pricing ul.pricePackages li.priceCard ul li {
+    margin: 1rem 0rem;
+}
+main section.pricing ul.pricePackages li.priceCard p.price {
+    font-size: large;
+    font-weight: 900;
+}

@@ -1,0 +1,44 @@
+@import 'header.css';
+@import 'form.css';
+
+body {
+    background-color: var(--quote-bg);
+}
+main {
+    align-items: center;
+    padding: 6rem 0rem;
+}
+main div.wc {
+    justify-content: space-between;
+}
+main div.wc hr {
+    margin: 3rem;
+}
+main div.contactInfo {
+    flex-shrink: 0;
+    border: 2px solid var(--dark);
+    background-color: var(--light);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--dark);
+}
+main div.contactInfo > *{
+    margin-top: 1rem;
+}
+main div.contactInfo h2 {
+    margin: 0;
+}
+main div.contactInfo p {
+    font-weight: 900;
+    display: inline;
+}
+
+@media screen and (max-width:820px) {
+    main div.wc.rowFlexer {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    main div.wc hr {
+        width: 100%;
+    }
+}

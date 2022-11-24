@@ -4,10 +4,12 @@ header {
     position: fixed;
     justify-content: center;
     width: 100%;
+    z-index: 1;
     background-color: var(--hero-bg);
 }
 header nav {
     min-width: 7rem;
+    margin-left: auto;
 }
 header > div.wc {
     justify-content: space-between;
@@ -34,6 +36,21 @@ header nav li a {
     text-decoration: none;
     font-size: 1.125rem;
     color: var(--hero-txt);
+}
+header nav li a.pageOn {
+    text-decoration: none;
+    font-weight: 900;
+    padding-bottom: 5px;
+    border-bottom: 4px solid var(--theme-accent);
+}
+header a#backToHome {
+    text-decoration: none;
+    font-size: larger;
+    color: var(--hero-main-txt);
+    border: 2px solid var(--light);
+    border-radius: 10px;
+    padding: .3rem 1rem 0.5rem 1rem;
+    margin-left: 1rem;
 }
 
 @media screen and (max-width:820px) {

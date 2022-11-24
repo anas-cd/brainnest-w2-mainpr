@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="../GStyle.css">
+    <link rel="stylesheet" href="../styling/contactPage/contactStyling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="rowFlexer">
+        <div class="wc rowFlexer">
+            <a href="/"><h1>BlueLine</h1></a>
+            <!-- uncomment if extra navigation is needed -->
+            <!-- <nav>
+                <input type="checkbox" id="mobMenu">
+                <label for="mobMenu" id="mobMenu">Menu</label>
+                <menu class="menuDrob rowFlexer">
+                    <li><a href="#">About</a></li>
+                    <li><a href="pricingPage.html">Pricing</a></li>
+                    <li><a href="#" class="pageOn">Contact us</a></li>
+                </menu>
+            </nav> -->
+            <a href="/" id="backToHome">&#8592;</a>
+        </div>
+    </header>
+
+    <main class="colFlexer">
+        <div class="wc rowFlexer">
+            <form action="#" id="contactForm" class="colFlexer">
+                <h2>Contact Form</h2>
+                <fieldset class="colFlexer">
+                    <legend>Contact info</legend>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="email@example.com" required>
+                </fieldset>
+                <fieldset class="colFlexer">
+                    <legend>Message info</legend>
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" required>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="10" required></textarea>
+                </fieldset>
+                <button type="submit">Send</button>
+            </form>
+            <hr>
+            <div class="contactInfo">
+                <h2>Contact Info</h2>
+                <div class="contactEntry">
+                    <p>Phone: </p>
+                    <a href="tel:+1000000000">+1000000000</a>
+                </div>
+                <div class="contactEntry">
+                    <p>Email: </p>
+                    <a href="mailto:email@example.com">email@example.com</a>
+                </div>
+                <div class="contactEntry">
+                    <p>address: </p>
+                    <address>
+                        Building 10, 1st ST, City, Country.
+                    </address>
+                </div>
+            </div>
+        </div>
+    </main>
+    <a href="#" class="backToTop">Back to top &#8593;</a>
+
+    <footer class="rowFlexer">
+        <div class="wc rowFlexer">
+            <p>Copyright <sup>&#169;</sup></p>  
+        </div>
+    </footer>
+</body>
+</html>

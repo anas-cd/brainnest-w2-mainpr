@@ -1,0 +1,38 @@
+@import '../colors.css';
+
+form#contactForm {
+    max-width: 36rem;
+    width: 100%;
+    border: 2px solid var(--theme-accent);
+    border-radius: 10px;
+    background-color: var(--light);
+    color: var(--dark);
+    box-shadow: 1px 30px 36px -36px #3882f6;
+}
+form#contactForm > * {
+    margin: 1rem;
+}
+form#contactForm fieldset > * {
+    margin: 0.2rem;
+}
+form#contactForm fieldset {
+    border-radius: 10px;
+}
+input , textarea {
+    border: 2px solid var(--med);
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: var(--dark);
+    transition-duration: 0.5s;
+}
+textarea {
+    resize: none;
+}
+input:focus , textarea:focus {
+    outline: none !important;
+    border-color: var(--theme-accent);
+}
+
+
+
