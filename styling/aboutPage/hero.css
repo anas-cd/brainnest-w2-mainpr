@@ -5,8 +5,7 @@ main section {
 }
 main section.banner {
     padding-top: 3rem;
-    background: rgb(31,41,55);
-    background: linear-gradient(180deg, rgba(31,41,55,1) 30%, rgba(56,130,246,1) 100%);
+    background-color: var(--hero-bg);
 }
 main section.banner div.wc {
     align-items: center;
