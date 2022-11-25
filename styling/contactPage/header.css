@@ -33,9 +33,14 @@ header nav li {
     list-style: none;
 }
 header nav li a {
+    padding-bottom: 4px;
     text-decoration: none;
     font-size: 1.125rem;
     color: var(--hero-txt);
+    transition-duration: 0.2s;
+}
+header nav li a:hover {
+    border-bottom: 3px solid var(--theme-accent);
 }
 header nav li a.pageOn {
     text-decoration: none;

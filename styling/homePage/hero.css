@@ -14,7 +14,7 @@ main .hero h1 {
     font-weight: 900;
     color: var(--hero-main-txt);
 }
-main .hero p {
+.hero p {
     margin-bottom: .5rem;
     font-size: 1.125rem;
 }

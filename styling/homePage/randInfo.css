@@ -26,6 +26,10 @@ main .randInfo ul li{
     width: 150px;
     text-align: center;
     color: var(--info-txt);
+    transition-duration: 0.2s;
+}
+main .randInfo ul li:hover {
+    scale: 1.3;
 }
 main .randInfo img {
     margin: 0.5rem 0;
