@@ -2,11 +2,7 @@
 
 main .randInfo {
     padding-bottom: 2.8rem ;
-    justify-content: center;
     background-color: var(--info-bg);
-}
-main .randInfo > div.colFlexer {
-    align-items: center;
 }
 main .randInfo h2 {
     margin: 1rem;
@@ -35,9 +31,9 @@ main .randInfo img {
     margin: 0.5rem 0;
     width: 150px;
     height: 150px;
-    object-fit: cover;
     border: 3px solid var(--theme-accent);
     border-radius: 10px;
+    object-fit: cover;
 }
 
 @media screen and (max-width:820px) {

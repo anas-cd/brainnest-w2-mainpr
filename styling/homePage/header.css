@@ -2,10 +2,9 @@
 
 header {
     position: fixed;
-    justify-content: center;
     width: 100%;
-    z-index: 50;
     background-color: var(--hero-bg);
+    z-index: 50;
 }
 header nav {
     min-width: 7rem;
@@ -47,27 +46,27 @@ header nav li a:hover {
         display: block;
     } 
     header nav label#mobMenu {
+        padding: 4px 0;
         color: var(--hero-bg);
         cursor: pointer;
         background: url(../../assets/images/menu-closed.png) no-repeat right center;
         background-size: 24px;
-        padding: 4px 0;
         transition-duration: 0.5s;
         animation: fadeOut 0.5s ease 0s 1 normal forwards, fadeIn 0.5s ease 0s 1 normal forwards;
     }
     header nav menu.menuDrob {
         flex-flow: column nowrap;
-        opacity: 0;
+        position: absolute;
         padding: 0;
         max-height: 0;
-        overflow: hidden;
-        position: absolute;
         left: 10px;
         right: 10px;
-        background-color: var(--hero-bg);
         border: 0px solid var(--med);
         border-radius: 10px;
+        background-color: var(--hero-bg);
         box-shadow: 0px 24px 76px 0px var(--dark);
+        opacity: 0;
+        overflow: hidden;
         transition-duration: 0.2s;
         animation: menuSlideClose 0.5s ease 0s 1 normal forwards;
     }
@@ -78,15 +77,15 @@ header nav li a:hover {
     header nav input#mobMenu:checked ~ menu.menuDrob {
         transition-duration: 0.2s;
         max-height: fit-content;
-        opacity: 1;
-        border: 2px solid var(--med);
         height: fit-content;
+        border: 2px solid var(--med);
+        opacity: 1;
         animation: menuSlideOpen 0.5s ease 0s 1 normal forwards;
     }
     header nav input#mobMenu:checked ~ label#mobMenu {
+        padding: 4px;
         background: url(../../assets/images/menu-opened.png) no-repeat right center;;
         background-size: 24px;
-        padding: 4px;
         transition-duration: 0.5s;
         animation: fadeOut 0.5s ease 0s 1 normal forwards, fadeIn 0.5s ease 0s 1 normal forwards;
     }

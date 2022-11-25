@@ -1,13 +1,11 @@
 @import "../colors.css";
 
 main .quote {
-    justify-content: center;
     padding: 6.5rem;
     background-color: var(--quote-bg);
     color: var(--quote-txt);
 }
 main .quote > div.wc {
-    align-items: center;
     max-width: 720px;
     width: 100%;
 }

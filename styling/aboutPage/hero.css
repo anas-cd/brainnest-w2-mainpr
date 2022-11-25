@@ -1,10 +1,7 @@
 @import '../colors.css';
 
-main section {
-    justify-content: center;
-}
 main section.banner {
-    padding-top: 3rem;
+    padding-top: 4rem;
     background-color: var(--hero-bg);
 }
 main section.banner div.wc {
@@ -17,10 +14,10 @@ main section.banner div.aboutInfo > * {
     margin-bottom: 1rem;
 }
 main section.banner img {
+    margin-top: -6rem;
     max-width: 350px;
     width: 100%;
     transform: translateY(9rem);
-    margin-top: -6rem;
 }
 
 @media screen and (max-width:820px) {

@@ -1,27 +1,27 @@
 @import "./styling/colors.css";
 html {
+    margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    scroll-behavior: smooth;
 }
 *, *:before, *:after {
-    box-sizing: inherit;  
     margin: 0; 
+    box-sizing: inherit;  
 }
 
 /* globally used elements */
 
 button {
-    background-color: var(--theme-accent);
+    position: relative;
+    padding: 0.5rem 2rem;
     border: none;
+    border-radius: 10px;
+    background-color: var(--theme-accent);
     overflow: hidden;
     text-align : center;
     transition : .2s;
-    border-radius: 10px;
-    position: relative;
-    padding: 0.5rem 2rem;
 }
 button p.btnText {
     margin: 0;
@@ -31,20 +31,20 @@ button p.btnText {
     transition : .3s;
 }
 button .btnTwo {
+    margin-top: -0.5rem;
+    padding: 0.5rem;
     position: absolute;
-    left: -12rem;
-    opacity: 0;
     max-width: 40%;
     width: 100%;
     height: 100%;
-    margin-top: -0.5rem;
-    padding: 0.5rem;
+    left: -12rem;
     top: 0.5rem;
+    opacity: 0;
     background-color: #294d85;
-    transition-duration: 0.2s;
     background: url(./assets/images/right-arrow.png) no-repeat center;
     background-size: contain;
     filter: invert(100%) sepia(16%) saturate(1662%) hue-rotate(218deg) brightness(117%) contrast(105%);
+    transition-duration: 0.2s;
     z-index: 1;
 }
 button:hover { 
@@ -64,28 +64,26 @@ button:active {
 
 a.backToTop {
     --offset: 100px;
+    margin-left: calc(100vw - 180px);
+    margin-top: calc(100vh + var(--offset));
+    padding: 10px 20px;
     position: sticky;
     bottom: 24px;
-    margin-left: calc(100vw - 180px);
+    border: 1px dashed;
+    border-radius: 10px;
     place-self: end;
-    margin-top: calc(100vh + var(--offset));
     text-decoration: none;
-    padding: 10px 20px;
     font-family: sans-serif;
     color: #fff;
     background: #3882f6;
-    border-radius: 10px;
-    border: 1px dashed;
 }
 
 footer {
-    justify-content: center;
     padding: 1rem 0;
     background-color: var(--dark);
     color: var(--light);
 }
 footer .wc {
-    justify-content: center;
     align-items: baseline;
 }
 footer .wc > a{
@@ -112,8 +110,10 @@ footer .wc a{
 .rowFlexer {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
 }
 .colFlexer {
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
 }

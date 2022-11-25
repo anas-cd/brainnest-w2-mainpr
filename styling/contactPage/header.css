@@ -2,10 +2,9 @@
 
 header {
     position: fixed;
-    justify-content: center;
     width: 100%;
-    z-index: 1;
     background-color: var(--hero-bg);
+    z-index: 1;
 }
 header nav {
     min-width: 7rem;
@@ -43,19 +42,19 @@ header nav li a:hover {
     border-bottom: 3px solid var(--theme-accent);
 }
 header nav li a.pageOn {
-    text-decoration: none;
-    font-weight: 900;
     padding-bottom: 5px;
     border-bottom: 4px solid var(--theme-accent);
+    text-decoration: none;
+    font-weight: 900;
 }
 header a#backToHome {
+    padding: .3rem 1rem 0.5rem 1rem;
+    margin-left: 1rem;
+    border: 2px solid var(--light);
+    border-radius: 10px;
     text-decoration: none;
     font-size: larger;
     color: var(--hero-main-txt);
-    border: 2px solid var(--light);
-    border-radius: 10px;
-    padding: .3rem 1rem 0.5rem 1rem;
-    margin-left: 1rem;
 }
 
 @media screen and (max-width:820px) {
@@ -63,26 +62,26 @@ header a#backToHome {
         display: block;
     } 
     header nav label#mobMenu {
+        padding: 4px 0;
         color: var(--hero-bg);
         cursor: pointer;
         background: url(../../assets/images/menu-closed.png) no-repeat right center;
         background-size: 24px;
-        padding: 4px 0;
         transition-duration: 0.5s;
         animation: fadeOut 0.5s ease 0s 1 normal forwards, fadeIn 0.5s ease 0s 1 normal forwards;
     }
     header nav menu.menuDrob {
+        position: absolute;
         flex-flow: column nowrap;
-        opacity: 0;
         padding: 0;
         max-height: 0;
-        overflow: hidden;
-        position: absolute;
         left: 10px;
         right: 10px;
-        background-color: var(--hero-bg);
         border: 0px solid var(--med);
         border-radius: 10px;
+        opacity: 0;
+        overflow: hidden;
+        background-color: var(--hero-bg);
         box-shadow: 0px 24px 76px 0px var(--dark);
         transition-duration: 0.2s;
         animation: menuSlideClose 0.5s ease 0s 1 normal forwards;
@@ -92,17 +91,17 @@ header a#backToHome {
     }
     /* menu activation */
     header nav input#mobMenu:checked ~ menu.menuDrob {
-        transition-duration: 0.2s;
         max-height: fit-content;
-        opacity: 1;
-        border: 2px solid var(--med);
         height: fit-content;
+        border: 2px solid var(--med);
+        opacity: 1;
+        transition-duration: 0.2s;
         animation: menuSlideOpen 0.5s ease 0s 1 normal forwards;
     }
     header nav input#mobMenu:checked ~ label#mobMenu {
+        padding: 4px;
         background: url(../../assets/images/menu-opened.png) no-repeat right center;;
         background-size: 24px;
-        padding: 4px;
         transition-duration: 0.5s;
         animation: fadeOut 0.5s ease 0s 1 normal forwards, fadeIn 0.5s ease 0s 1 normal forwards;
     }

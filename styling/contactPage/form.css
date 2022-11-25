@@ -1,6 +1,7 @@
 @import '../colors.css';
 
 form#contactForm {
+    align-items: unset;
     max-width: 36rem;
     width: 100%;
     border: 2px solid var(--theme-accent);
@@ -16,12 +17,13 @@ form#contactForm fieldset > * {
     margin: 0.2rem;
 }
 form#contactForm fieldset {
+    align-items: unset;
     border-radius: 10px;
 }
 input , textarea {
+    padding: 0.5rem;
     border: 2px solid var(--med);
     border-radius: 5px;
-    padding: 0.5rem;
     font-size: 1rem;
     color: var(--dark);
     transition-duration: 0.5s;
@@ -30,7 +32,7 @@ textarea {
     resize: none;
 }
 input:focus , textarea:focus {
-    outline: none !important;
+    outline: none ;
     border-color: var(--theme-accent);
 }
 
