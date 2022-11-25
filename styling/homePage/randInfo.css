@@ -33,7 +33,9 @@ main .randInfo ul li:hover {
 }
 main .randInfo img {
     margin: 0.5rem 0;
-    width: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border: 3px solid var(--theme-accent);
     border-radius: 10px;
 }

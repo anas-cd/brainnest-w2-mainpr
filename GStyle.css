@@ -86,6 +86,15 @@ footer {
 }
 footer .wc {
     justify-content: center;
+    align-items: baseline;
+}
+footer .wc > a{
+    margin-right: 1rem;
+    text-decoration: none;
+    font-family: 'Leckerli One', cursive;
+}
+footer .wc a{
+    color: var(--hero-secondary-txt);
 }
 
 @media screen and (max-width:820px) {

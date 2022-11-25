@@ -9,6 +9,9 @@ main .hero {
 main .hero .heroInfo {
     margin-right: 2rem;
 }
+main .hero .heroInfo > *{
+    margin-top: .5rem;
+}
 main .hero h1 {
     font-size: 3rem;
     font-weight: 900;
@@ -21,6 +24,10 @@ main .hero h1 {
 main .hero img {
     max-width: 470px;
     width: 100%;
+}
+main .hero img::after {
+    content: "";
+    box-shadow: inset 1px 1px 1px 1px black;
 }
 
 @media screen and (max-width:820px) {
