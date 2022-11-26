@@ -71,7 +71,6 @@ a.backToTop {
     bottom: 24px;
     border: 1px dashed;
     border-radius: 10px;
-    place-self: end;
     text-decoration: none;
     font-family: sans-serif;
     color: #fff;
